@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 清零 */
+    *{
+        margin:0;
+        padding:0;
+    }
+    /* 清零 */
+    ul,ol{
+        list-style: none;
+    }
+    .box{
+        /* 高 */
+        height:2000px;
+        /* 背景颜色 */
+        background:lightseagreen;
+        /* 行高 */
+        line-height:35px;
+    }
+    .fastnav{
+        /* 宽 */
+        width:60px;
+        /* 背景颜色 */
+        background:#fff;
+        /* 固定定位 */
+        position:fixed;
+        /* 控制定位 */
+        right:0%;
+        /* 控制定位 */
+        top:100px;
+    }
+    .fastnav li{
+        /* 高 */
+        height:60px;
+        /* 文字居中 */
+        text-align: center;
+        padding:10px 16px;
+        /* ie盒模型 */
+        box-sizing: border-box;
+        /* 字号 */
+        font-size:14px;
+        /* 相对定位 */
+        position: relative;
+    }
+    .fastnav li:last-child::after{
+        /* 元素消失 */
+        display:none;
+
+    }
+    /* 伪元素 */
+    .fastnav li::after{
+        content:"";
+        display:block;
+        width:40px;
+        height:1px;
+        background:red;
+        position:absolute;
+        left:10px;
+        bottom:-1px;
+    }
+    .fastnav li:hover{
+        /* 颜色 */
+        background:red;
+        color:linen;
+    }
+    /* 选中fastnav里面的li元素的伪元素让它消失 */
+    .fastnav li:hover::after{
+        display:none;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        习近平指出，中日两国一衣带水，历史人文渊源深厚。在绵延2000多年的长期交往中，两国人民相互学习借鉴，促进了各自发展，也为亚洲文明进步作出了贡献。当今世界正经历百年未有之大变局，人类应对共同挑战、迈向美好未来离不开文化的力量。世界各国人民应该把握大势、顺应潮流、加强交流，共同谱写人类文明新篇章。
+        习近平指出，中日两国一衣带水，历史人文渊源深厚。在绵延2000多年的长期交往中，两国人民相互学习借鉴，促进了各自发展，也为亚洲文明进步作出了贡献。当今世界正经历百年未有之大变局，人类应对共同挑战、迈向美好未来离不开文化的力量。世界各国人民应该把握大势、顺应潮流、加强交流，共同谱写人类文明新篇章。
+        习近平指出，中日两国一衣带水，历史人文渊源深厚。在绵延2000多年的长期交往中，两国人民相互学习借鉴，促进了各自发展，也为亚洲文明进步作出了贡献。当今世界正经历百年未有之大变局，人类应对共同挑战、迈向美好未来离不开文化的力量。世界各国人民应该把握大势、顺应潮流、加强交流，共同谱写人类文明新篇章。
+    </div>
+    <ul class="fastnav">
+        <li>京东秒杀</li>
+        <li>京东秒杀</li>
+        <li>京东秒杀</li>
+        <li>京东秒杀</li>
+        <li>京东秒杀</li>
+        <li>京东秒杀</li>
+        <li>京东秒杀</li>
+    </ul>
+</body>
+</html>

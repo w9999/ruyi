@@ -1,0 +1,95 @@
+.phoneBox{
+    height: 700px;
+    background: lightseagreen;
+}
+.md{
+    width: 1226px;
+    margin: 0 auto;
+}
+.phone{
+    height: 500px;
+
+}
+.phone .top{
+    height: 58px;
+    line-height: 58px;
+   
+}
+h3{
+    float: left;
+    font-size: 22px;
+    color: #333;
+    font-weight: 200px;
+}
+.phone .more{
+    float: right;
+    font-size: 16px;
+    color: #424242;
+}
+
+.phone .bottom .left{
+    width: 234px;
+    height: 614px;
+    background: url(../images/1.jpg.webp)
+    center center no-repeat;
+    float: left;
+    background-size: 100%;
+}
+.phone .bottom .right{
+     width: 992px;
+     height: 614px;
+     float: left;
+}
+.phone .bottom .right>li{
+    width: 234px;
+    height: 300px;
+    background: greenyellow;
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+.homeBox .md{
+    width: 1226px;
+    background: blue;
+    margin: 0 auto;
+}
+ .home .top{
+   height: 58px;
+   line-height: 58px;
+
+ } 
+.home .top h3{
+    /* width: 1226px; */
+    float: left;
+    height: 58px;
+    line-height: 58px;
+}
+.home .top ul{
+    float: right;
+}
+.home .top ul>li{
+    float: left;
+    margin-left: 30px;
+   
+   
+    margin-top: 15px;
+    line-height: 27px;
+}
+.current{
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+}
+.bottom>li{
+    width: 234px;
+    height: 300px;
+    background: lightcoral;
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 14px;
+}
+.bottom .nort{
+    margin-right: 0;
+}
+.bottom>li:last-child,.bottom>li:nth-last-child(2){
+    height: 143px;
+}

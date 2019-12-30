@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* 
+var ary=[34,56,12,66,12];
+插入排序：
+目的：从小大排序
+原理：新建一个空数组,从原数组中依次拿出每一项，插入到下面的新数组中。插入的时候有一个规律：
+                     1）顺序：从右向左
+                     2）在插入的时候，拿出的这向比某项大，就直接放到某项后面
+                     3）如果说比到第一项了，还不大于等于，就说明了拿出的这项就是最小的，直接就放到数组的最前面即可。
+ 
+ var ary=[34,56,12,66,12];            
+var newAry=[];
+第一次拿出第一项：34
+             =========>[34],因为里面没有其它项，不需要进行比较
+第二次拿出第二项：56
+             =========>[34,56]   
+第三次拿出第三项：12
+             ==========>[12,34,56]
+第四次拿出第四项：66             
+             ==========>[12,34,56,66]
+第五次拿出第五项：12               
+
+
+*/
+
+var ary=[34,56,12,66,12];
+
+function insertSort(ary){
+     //排序好的新数组
+     var newAry=[];
+     // 拿出的第一项
+     newAry.push(ary[0]);
+     //  拿出原数组中的每一项
+     for(var i=1;i<ary.length;i++){
+         var getItem=ary[i];
+         for(var j=newAry.length-1;j>=0;j--){
+             var newItem=newAry[j];
+             if(getItem>=newItem){
+                newAry.splice(j+1,0,getItem);
+                break;
+             }
+             if(j==0){
+                newAry.unshift(getItem);
+             }
+         }
+     }
+     return newAry;
+}
+console.log(insertSort(ary));
+    </script>
+</body>
+</html>

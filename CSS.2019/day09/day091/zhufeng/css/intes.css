@@ -1,0 +1,127 @@
+.md{
+    width: 1200px;
+    margin: 0 auto;
+}
+.navBox{
+    height: 83px;
+    line-height: 83px;
+}
+.navBox a{
+    color: #2a2a2a;
+    font-size: 14px;
+}
+.navBox .logo{
+    float: left;
+    height: 65px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+.navBox .navBody{
+    float: left;
+
+}
+.navBox .message{
+    float: right;
+}
+.logo>a{
+    width: 176px;
+    height: 52px;
+    background: url(../imges/珠峰pc端课件_03.png)
+    center center no-repeat;
+    display: inline-block;
+}
+.navBody>li{
+    float: left;
+    margin-left: 55px;
+}
+.cartBox{
+    width: 24px;
+    height: 22px;
+    background:url(../imges/珠峰pc端课件_06.png)
+    center center no-repeat;
+    float: left;
+}
+.cart span{
+    float: left;
+    margin-left: 7px;
+}
+.message a{
+    float: left;
+}
+.message .cart{
+    line-height: 22px;
+    margin-top: 30px;
+}
+.logoIn{
+    margin-left: 39px;
+    margin-right: 37px;
+}
+.message>a{
+    float: left;
+}
+.bannerBox{
+    height: 361px;
+    position: relative;
+    overflow: hidden;
+}
+.bannerIn{
+    width: 2400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bannerIn li{
+    float: left;
+}
+.bannerIn li a{
+    display: block;
+}
+.bannerIn li img{
+    display: block;
+    height: 100%;
+}
+.bannerBar{
+    width: 240px;
+    height: 361px;
+    position: relative;
+    left: 0;
+    top: 0;
+    background: rgba(2,0,0,.2);
+}
+.bannerBar li{
+    height: 73px;
+    line-height: 73px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+.bannerBar li:hover{
+    background:rgba(11, 11, 11, .3) ;
+}
+.bannerBar li>a{
+    display: block;
+    border-bottom:1px solid #fff;
+    color: #fff;
+    background: url("../imges/copy.png")
+    175px center no-repeat;
+    
+}
+.bannerBar li:last-child{
+    height: 64px;
+    line-height: 64px;
+}
+.bannerBar li:last-child>a{
+    border-bottom: 0;
+}
+.bannerBar .text{
+    width: 500px;
+    height: 361px;
+    background: pink;
+    position: absolute;
+    left: 240px;
+    top: 0;
+    display: none;
+}
+.bannerBar li:hover .text{
+    display: block;
+}

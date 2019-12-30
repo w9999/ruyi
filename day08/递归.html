@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // 1到100之间既能被5整除又能被3整除的数的和
+        // function fn(num){
+        //     if(num>100){
+        //         return 0
+        //     }
+        //     if(num%15 === 0){
+        //         return num+fn(num+1)
+        //     }
+        //     return fn(num+1)
+        // }
+
+            // 1到5之间能被2整除的数的和
+            function fn(num){
+            if(num>5){
+                return 0
+            }
+            if(num%2 === 0){
+                return num+fn(num+1)
+            }
+            return fn(num+1)
+        }
+        console.log(fn(1)) // 6
+
+
+        // function fn(1){
+        //     return fn(2) // 6
+
+        // function fn(2){
+        //         return 2 + fn(3) // 4
+        // }
+
+         // function fn(3){
+        //     return fn(4) // 4
+        // }
+
+         // function fn(4){
+        //         return 4+fn(5) // 0
+        // }
+
+         // function fn(5){
+        //     return fn(6) // 0
+        // }
+
+          // function fn(6){
+        //     return 0
+        // }
+    </script>
+</body>
+</html>

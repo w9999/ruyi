@@ -1,0 +1,78 @@
+.dm{
+    background: url(../images/her.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+.heaber .logo{
+    position: absolute;
+    top: 26px;
+    left: 200px;
+}
+.heaber .lgoo a{
+    font-size: 15px;
+    color: #fff;
+    float:right;
+    margin-right: 110px;
+    margin-top: 31px;
+    position: relative;
+    display: block;
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 67.2px;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    top: 280px;
+    left: 200px;
+}
+.hero a{
+    font-size: 22px;
+    color: #fff;
+    width: 295px;
+    height: 59px;
+    background: rgba(0,0,0,0.6);
+    font-weight: 700;
+    display:inline-block;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    text-align:center;
+    line-height: 59px;
+    border-radius: 6px;
+}
+.osmd{
+    width: 100%;
+    height: 42px;
+    background: rgba(59,54,48,0.4);
+    margin-top: 669px;
+    /* margin-left: 59px; */
+}
+.osmd div{
+    display:inline-block;
+    line-height:42px;
+    /* margin-left: 300px; */
+}
+.osmd .item{
+    width: 52px;
+    height: 18px;
+    background: #e23d0e;
+    line-height: 18px;
+    color: #ffffff;
+    font-size: 12px;
+    overflow: hidden;
+    margin-bottom: 38px;
+    margin-left: 196px;
+    border-radius: 6px;
+    
+}
+.osmd .iteo{
+    width: 340px;
+    height: 22px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 8px;
+}

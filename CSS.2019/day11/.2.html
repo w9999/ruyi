@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background: hotpink;
+        /* 无限循环 */
+        animation: sun 2s linear 0s infinite;
+        /* 当案例结束停在最后一个 */
+        animation: sun 2s linear 1s forwards;
+        animation: sun 2s linear 1s infinite;
+        animation: sun 2s linear 1s both;
+    }
+    @keyframes sun {
+        0%{
+            transform: translate(0,0);
+        }
+        50%{
+            transform: translate(500px,0);
+        }
+        100%{
+            transform: translate(500px,500px);
+        }
+        150%{
+            transform: translate(1500px,1500px);
+         }
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

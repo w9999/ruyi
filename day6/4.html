@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* 
+ 数组去重：
+ var ary=[1,2,3,2,3];
+ var ary=[1,2,3]
+   先拿出第一项1
+             ======>2,3,2,3
+   先拿出第二项2
+             ======>3,2,3  删除掉2
+             ======> [1,2,3,3] 现在
+   先拿出第三项3
+             =====>3
+
+ 原理：我依次拿出数组中的每一项，和后面的所有项进行比较，如果相同，我们就把原数组中的此项删除掉
+
+*/
+var ary=[1,2,3,2,3];
+function unique(ary){
+    for(var i=0;i<ary.length-1;i++){
+        var current=ary[i];
+        for(var j=i+1;j<ary.length;j++){
+           var next=ary[j];
+           if(current==next){
+                ary.splice(j,1);
+                j--;
+           }
+        }
+    
+    }
+    return ary;
+}
+
+
+
+var ary2=[1,2,1,3,3,2,3];
+
+var res=unique(ary2)
+    </script>
+</body>
+</html>

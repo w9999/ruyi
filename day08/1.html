@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>111</span>
+    </div>
+    <script>
+
+        /* 
+        document.createElement('div')
+        document.createTextNode('1111')
+        insertBefore()
+        appendChild
+        removeChild()
+        cloneNode(true/false):克隆节点 如果传参是true就是深克隆，如果传false或不传，就是浅克隆
+
+        setAttribute(属性名，属性值)：给元素的结构上增加自定义属性
+        getAttribute(属性名)：获取结构是哪个的自定义属性
+        removeAttribute(属性名):移除元素结构上的属性
+        用set设置的值必须用get获取，用.设置的值，必须用.去获取
+        */
+        let box = document.getElementsByClassName('box')[0];
+        // console.log(box)
+        // let clone1 = box.cloneNode(true);
+        // let clone2 = box.cloneNode(false)
+        // document.body.appendChild(clone1);
+        // document.body.appendChild(clone2);
+        // console.log(clone1)
+
+       
+        box.myIndex = 1; // 是把键值对增加到堆内存中了
+        console.log(box.myIndex)
+
+        box.setAttribute('flag', 333) // 给元素的结构上增加自定义属性
+        console.log(box.getAttribute('flag'))
+        box.removeAttribute('flag')
+        console.log(box.flag)
+        console.dir(box)
+
+
+
+
+
+
+
+
+
+        /* 
+        ary.length-- 
+        ary.length-=2
+        ary.splice(ary.length-1)
+        pop
+
+        shift
+        splice(0,1)
+
+        shift、pop、push、unshift、splice、reverse、sort
+        concat、slice、join、indexOf、lastIndexOf、includes、forEach、map
+        */
+
+
+    </script>
+</body>
+</html>

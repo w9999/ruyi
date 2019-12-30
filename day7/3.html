@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // 利用对象的属性名如果存在，那属性值就不是undefined
+            let ary = [23, 55, 23, 34, 23, 34, 23];
+
+function unique(ary) {
+    let obj = {};
+    for (var i = 0; i < ary.length; i++) {
+        if (obj[ary[i]] !== undefined) {
+            // 如果此条件成立，把这一项在数组中就是重复项
+            // 把这一项在原数组中删除
+            // ary.splice(i, 1);
+            // i--; // 数组塌陷
+            ary[i] = ary[ary.length-1];
+            ary.length--;
+            i--;
+        } else {
+            obj[ary[i]] = ary[i]
+            // obj [23] = 23
+        }
+    }
+    return ary
+}
+console.log(unique(ary)) // [23, 34]
+    </script>
+</body>
+</html>

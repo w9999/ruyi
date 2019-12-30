@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.phoneBox{
+    height: 700px;
+    background: lightskyblue;
+}
+.md{
+    width: 1226px;
+    margin: 0 auto;
+}
+.phone{
+    height: 500px;
+    background: pink;
+}
+.phone .top{
+    height: 58px;
+    line-height: 58px;
+    background: yellow;
+}
+.phone h3{
+    float: left;
+    font-size: 22px;
+    color: #333;
+    font-weight: 200;
+}
+.phone .more{
+    float:right;
+    font-size: 16px;
+    color: #424242;
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    font-size: 0;
+    height:0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+.phone .bottom{
+    height: 614px;
+    background: darkkhaki;
+}
+.phone .bottom .left{
+    width: 234px;
+    height: 614px;
+    background: url(../images/1.jpg.webp) center center no-repeat;
+}
+.phone .bottom.right{
+    height: 978px;
+}

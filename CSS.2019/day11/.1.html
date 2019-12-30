@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background: hotpink;
+        /* 过度的属性 */
+        /* transition-property:height ; */
+        /* 过度的时间 */
+        /* transition-duration: 1s; */
+        /* 过度的曲线 */
+        /* transition-timing-function: linear; */
+        /* 延时时间 */
+        /* transition-delay: 1s; */
+        transition:all 1s linear;
+    }
+    .box:hover{
+        height: 500px;
+        width: 500px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

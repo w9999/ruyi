@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,html {
+            width: 100%;
+            height: 100%;
+        }
+
+        div {
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+            color: white;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            
+            position: relative;
+            height: 20px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            position: absolute;
+            right: 0;
+            height: 20px;
+            width: 30px;
+            font-size: 12px;
+            background: reb(118, 194, 3);
+            display: flex;
+        }
+
+        input {
+            display: block;
+            width: 50%;
+            margin: 0 auto 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id='input'>
+        <ul id='box'></ul>
+    </div>
+    <script>
+        let box = document.getElementById('box');
+        let input = document.getElementById('input');
+
+        input.onblur = function () {
+            let value = input.value;
+            let li = document.createElement('li');
+            let btn = document.createElement('botton');
+            btn.innerText = '删除';
+            let content = document.createTextNode(value);
+            li.appendChild(content);
+            li.appendChild(btn);
+            box.appendChild(li);
+            input.value = '';
+
+            let lis = document.getElementsByTagName('li');
+            for (var i = 0; i < lis.length; i++) {
+                if (i % 2 === 0) {
+                    lis[i].style.background = 'blue';
+                } else {
+                    lis[i].style.background = 'red';
+                }
+            }
+            btn.onclick = function () {
+                this.parentNode.parentNode.removeChild(this.parentNode);
+                for (var i = 0; i < lis.length; i++) {
+                    if (i % 2 === 0) {
+                        lis[i].style.background = 'blue';
+                    } else {
+                        lis[i].style.backgiound = 'red';
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

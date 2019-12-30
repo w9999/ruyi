@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 引用数据类型详解
+        // 1、普通对象
+        // 在js里任何事物都是对象
+        // 1、所有对象外层都是由大括号包裹，里面是由0到多组键值队组成，
+        // 每组之间拿逗号隔开
+        // 2、每一个键值队都是由属性名河属性值组成（key：valua），
+        // 中间拿冒号分割开
+        // 3、每个属性名的数据类型是数字或者字符串类型的，引号可以不写
+        // 4、属性值必须是js数据类型中的一种
+        // let person = {
+        //     name :'wang'
+        //     age:18,
+        //     ex:true,
+        //     height:'180cm',
+        //     6:13
+        // }
+        // 对象的增删改查
+        let monkey = {
+            name:'sunwukong',
+            age:'null',
+            sex:'man',
+        }
+        // 1、对象的查询：寻找对象的属性名，所对应的属性值
+        // 对象名.属性名  如果属性名是数字，那就不能用这种方式去获取
+        // 对象名['属性名']如果属性名是数字，可以不加引号
+        // console.log(monkey.name)'sunwukong'
+         // console.log(monkey.age) // null
+        // console.log(monkey['age'])null
+        // console.log(monkey[8]) // 12
+        // console.log(monkey.8)
+        // 如果查找对象里面的某一个属性名所对应的属性值查找不到就是undefined
+        // 2、对象的修改和新增
+        // 如果操作的属性名存在，那么就是修改，如果没有就是新增
+        // monkey.name = 'xxx'修改
+        // monkey.ss ='888'新增
+        // console.log(monkey)
+        // 3、对象的删除
+        //    1、假删除:他的属性名还是存在的
+        //    monkey.name =null;
+            //   2、真删除:把属性名也删除掉
+            //   delete monkey.name
+            // console.log(monkey)
+
+            
+    </script>
+</body>
+</html>

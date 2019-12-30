@@ -1,0 +1,135 @@
+/* 重置样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.nav{
+height: 40px;
+background: #333;
+color: #b0b0b0;
+font-size: 12px;
+line-height: 40px;
+    }
+    .nav .line{
+        color: #424242;
+        margin-left: 3.6px;
+        margin-right: 3.6px;
+    }
+    .nav a{
+        color: #b0b0b0;
+    }
+    /* 版心 */
+    .md{
+        width: 1226px;
+        margin: 0 auto; 
+    }
+    .navIn{
+        height: 40px;
+    }
+    .navIn>.left{
+        /* width: 200px; */
+        height: 40px;
+        float: left;
+    }
+    .navIn>.left>span,.navIn>.left>a, .navIn>.right>span,.navIn>.right>a{
+        float:left;
+    }
+    .navIn>.right{
+        height: 40px;
+        float: right;
+    }
+    .navIn .cart{
+        background: #424242;
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .navIn .cart:hover{
+        background: #fff;
+        color: #ff6700;
+    }
+    .nav a:hover{
+        color: #fff;
+    /* 重置样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.nav{
+height: 40px;
+background: #333;
+color: #b0b0b0;
+font-size: 12px;
+line-height: 40px;
+    }
+    .nav .line{
+        color: #424242;
+        margin-left: 3.6px;
+        margin-right: 3.6px;
+    }
+    .nav a{
+        color: #b0b0b0;
+    }
+    /* 版心 */
+    .md{
+        width: 1226px;
+        margin: 0 auto; 
+    }
+    .navIn{
+        height: 40px;
+    }
+    .navIn>.left{
+        /* width: 200px; */
+        height: 40px;
+        float: left;
+    }
+    .navIn>.left>span,.navIn>.left>a, .navIn>.right>span,.navIn>.right>a{
+        float:left;
+    }
+    .navIn>.right{
+        height: 40px;
+        float: right;
+    }
+    .navIn .cart{
+        background: #424242;
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .navIn .cart:hover{
+        background: #fff;
+        color: #ff6700;
+    }
+    .nav a:hover{
+        color: #fff;
+    }

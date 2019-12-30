@@ -1,0 +1,63 @@
+.srte{
+    background: #333;
+    height: 40px;
+}
+.srte .md{
+    width: 1226px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.srte .left,.srte .right{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.srte .left>a{
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.srte .left>span,.srte .message>span{
+    margin: 0.3em;
+    color: #424242;
+}
+.srte .message{
+    margin-left: 250px;
+}
+.srte .cart{
+  
+    margin-left: 30px;
+}
+.srte .right{
+    display: flex;
+}
+.srte .message>a{
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.srtet{
+    width: 1519px;
+    height: 100px;
+}
+.conai{
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.conai .logo{
+    width: 55px;
+    height: 55px;
+    background: url(../images/xm.png) center center no-repeat;
+    
+    
+}
+.srtet  .conai .nav>ul{
+    display: flex;
+}
+.srtet  .conai .nav .ul{
+    font-size: 16px;
+}

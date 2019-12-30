@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // let ary = [12, 23, 11, 34, 10, 9];
+
+// function bubble(ary) {
+    // 控制的是执行的轮数
+    // for (var i = 0; i < ary.length - 1; i++) {
+        // 控制的是每轮比较的次数
+        // for (var j = 0; j < ary.length - 1 - i; j++) {
+            // if (ary[j] < ary[j + 1]) {
+                // 如果当前项大于后一项，就两两交换位置
+                // var temp = ary[j];
+//                 ary[j] = ary[j + 1];
+//                 ary[j + 1] = temp;
+//             }
+//         }
+//     }
+//     return ary
+// }
+// console.log(bubble(ary))
+
+
+
+
+
+ /* 
+        数组的插入排序
+        1、先抓一张牌放到手里
+        2、继续抓桌面上的每一张牌，然后拿当前抓的牌和手里的牌从右往左依次做比较，如果抓到的牌比手里的牌大了，那就把抓到的牌放到那张牌的后面，并且停止比较
+        3、如果你抓的牌比你手里的都小，就直接放到最左边
+        
+        // let ary = [12,23, 12, 45, 21, 12, 11, 55,4];
+
+        function insert() {
+            let handAry = []; // 创建一个空数组用来存放手里的牌
+            // 先抓取第一张牌放手里
+            handAry.push(ary[0]);
+
+            // 此次循环是依次抓取每一张牌
+            for (var i = 1; i < ary.length; i++) {
+                var gradCard = ary[i] // 代表抓的每一张牌
+
+                // 此循环是把抓到的牌和手里的牌从右往左依次做比较
+                for (var j = handAry.length - 1; j >= 0; j--) {
+                    var next = handAry[j] // 代表你手里的每一张牌
+                    if (gradCard >= next) {
+                        // 如果抓到的牌比手里的牌大了，就把抓到的牌放到这张牌的后面
+                        handAry.splice(j + 1, 0, gradCard);
+                        break; // 结束此次比较
+                    }
+                    if (j === 0) {
+                        // 如果此条件成立，说明你抓的牌比手里的牌都小，就把这张牌直接放到手里牌的最左边
+                        handAry.unshift(gradCard);
+                    }
+                }
+            }
+            return handAry
+        }
+        console.log(insert(ary))*/
+         /* 
+        快速排序
+        1、从原数组中挑选一个值作为基准，然后把这一项在原数组中删除
+        2、创建两个空数组，循环数组的每一项，和基准进行比较，如果小于基准，就放到左边数组里，反之就放到右边数组
+        3、不断重复1和2步骤(递归)，直到数组的length小于等于1为止
+        4、最后从左往右依次把数组和基准拼接到一起，就是排好序的数组
+        */                
+       let ary = [3,2,1,5,4,8];
+       function quickSort(ary){ // 
+           if(ary.length<=1){
+               return ary
+           }
+        let middleIndex = Math.round(ary.length/2);
+        let middleValue = ary.splice(middleIndex,1)[0]; // 2
+        
+        let leftAry = [],
+            rightAry = [];
+            for (var i = 0; i < ary.length; i++) {
+               var cur = ary[i] // 数组的每一项
+               if(cur<middleValue){
+                   leftAry.push(cur)
+               }
+               else {
+                   rightAry.push(cur)
+               }
+            }
+            return quickSort(leftAry).concat(middleValue,quickSort(rightAry))
+                       
+       }
+       console.log(quickSort(ary)) 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.bannerBox{
+    width: 1226px;
+    height: 460px;
+    background: springgreen;
+    margin: 0 auto;
+    position: relative;
+}
+.bannderIn{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* 左边的快速导航 */
+.sliderBar{
+    width: 234px;
+    height: 460px;
+    background: rgba(105,101,101,0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+.sliderBar>li{
+   
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    text-indent: 20px;
+    background: url(../imgges/arrow.png) 200px center no-repeat;
+}
+.sliderBar>li:hover{
+    background-color:#ff6700;
+}
+.sliderBar>li a{
+    color:#fff;
+    display: block;
+    height: 42px;
+}
+.bannerBox .content{
+    width: 600px;
+    height: 460px;
+    background: cornflowerblue;
+    position: absolute;
+    left: 234px;
+    top: 0px;
+    display: none;
+}
+.sliderBar>li:hover .content{
+    display: block;
+}
+.leftArrow,.rightArrow{
+    width: 41px;
+    height: 69px;
+    background:url(../imgges/icon-slides.png);
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+}
+.leftArrow{
+    left: 234px;
+    background-position: -84px 0;
+}
+.leftArrow:hover{
+   background-position: 0 0;
+    
+}
+.rightArrow{
+    right: 0;
+    background-position:-125px 0;
+}
+.rightArrow:hover{
+    background-position:-42px 0 ;
+}

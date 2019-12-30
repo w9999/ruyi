@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+    .box{
+        width: 5px;
+        height: 205px;
+        background:black;
+        margin: 0 auto;
+        position: relative;
+        transform-origin:center top;
+        animation: run 15s ease 0s infinite;
+    }
+    .box1{
+        height: 75px;
+        width: 75px;
+        background: yellowgreen;
+        border-radius: 50%;
+        position: absolute;
+        top: 205px;
+        left: -35px;
+        box-shadow: 0 0 50px 0 red;
+    }
+    @keyframes run {
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(50deg);
+        }
+        50%{
+            transform: rotate(75deg);
+        }
+        75%{
+            transform: rotate(-50deg); 
+        }
+        100%{
+            transform: rotate(-75deg); 
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+        </div>
+    </div>
+</body>

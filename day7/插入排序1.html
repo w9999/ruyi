@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var ary=[34,56,12,66,12];
+    function insertSort(ary){
+        var newAry=[];
+        newAry.push(ary[0]);
+        for(var i=1;i<ary.length;i++){
+            var getltem=ary[i];
+        for(var j=newAry.length-1;j>=0;j--){
+            var newltem=newAry[j];
+            if(getltem>=newltem){
+                newAry.splice(j+1,0,getltem);
+                break;
+            }
+            if(j==0){
+                newAry.unshift(getltem);
+            }
+        }
+        }
+        return newAry;
+    }
+    var res=insertSort(ary);
+    // res控制台输出
+    </script>
+</body>
+</html>

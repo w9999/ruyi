@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //console.log(Number('12'))//12
+       // console.log(Number('12px'))//NaN
+        //引用数据类型转数字：先把值默认转换成字符串(浏览器内部默认去掉，用toString方法)，然后把字符串转换数字
+            //4、普通对象转数字
+               //所有的普通对象转字符串都是[object object]'
+               //所有的普通对象转数字都是nan
+               //let obj = {name:11};
+            //let obj1 = {};
+            // console.log(Number(obj)) // NaN
+            // console.log(Number(obj1)) // NaN
+           // console.log(obj1.toString()) // '[object Object]'
+           console.log(Number(Number( '([[2]])' )))
+           console.log(Number('12px')) // NaN
+           console.log(parseFloat('11'))
+           console.log(parseInt('12.5'))
+           console.log(parseFloat('12.5'))
+           console.log(parseFloat('[11.1,12]'))
+           console.log(parseInt('0.5'))
+
+               
+    </script>
+</body>
+</html>

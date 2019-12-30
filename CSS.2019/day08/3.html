@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul,li{
+        list-style:none;
+    }
+    .box{
+        height: 2000px;
+        background: seagreen;
+        line-height: 35px;
+    }
+    .fastNva{
+        width: 60px;
+        background: #fff;
+        position: fixed;
+        right: 0%;
+        top: 100px;
+    }
+    .fastNva li{
+        height: 60px;
+        padding: 10px 16px;
+        /* text-align: center; */
+        box-sizing: border-box;
+        font-size: 14px;
+        position: relative;
+    }
+    .fastNva li::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 1px;
+        background: rgb(0, 255, 85);
+        position: absolute;
+        left: 10px;
+        bottom: -1px;
+    }
+    .fastNva li:last-child::after{
+        display: none;
+    }
+    .fastNva li:hover{
+        background: red;
+        color: #fff;
+    }
+    .fastNva li:hover::after{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+   <div class="box">今年4月，习近平总书记在重庆考察并主持召开解决“两不愁三保障”突出问题座谈会时强调，重点做好那些尚未脱贫或因病因伤返贫群众的工作，加快完善低保、医保、医疗救助等相关扶持和保障措施，用制度体系保障贫困群众真脱贫、稳脱贫</div> 
+   <ul class="fastNva">
+       <li>京东秒杀</li>
+       <li>京东秒杀</li>
+       <li>京东秒杀</li>
+       <li>京东秒杀</li>
+       <li>京东秒杀</li>
+       <li>京东秒杀</li>
+       <li>京东秒杀</li>
+   </ul>
+</body>
+</html>

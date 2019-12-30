@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            overflow: hidden;
+           /*overflow: auto;*/
+           overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+            background-color 背景颜色
+            background-image:url(“图片的路径”)
+            background-position：水平 垂直;(背景图片的位置)
+            英文：水平方向：left、center、right；垂直方向：top、center、bottom
+            具体的像素值例如：background-position:50px 50px;
+            还可以是百分比
+            background-repeat:(控制图片是否平铺，以及平铺的方向)
+            no-repeat：不平铺
+            repeat-x ：水平方向平铺
+            repeat-y:垂直方向平铺
+            background-attachment:设置背景图像是否固定或者随着页面的其余部分滚动。
+            fixed
+            scroll （默认）
+            background-origin:指定背景图像的定位区域
+            padding-box  从内填充开始 （默认）
+            border-box    从边框开始
+            content-box   从content部分开始
+            注意：如果背景图像background-attachment是"固定"，这个属性没有任何效果。
+            background-clip:  背景裁剪
+             border-box；（默认值） 超出边框的部分 裁切掉
+            padding-box；超出padding部分的背景裁剪掉
+            content-box;   超出content 部分的背景裁剪掉
+            background-size:x y；（控制背景图片的大小，x代表的背景图片的宽，y代表的是背景图片高）
+            可以是具体的像素值，例如：background-size:100px 100px;
+            还可以是百分比，例如：background-size:100% 100%;
+            cover：把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。有可能造成背景图像的某些部分也许无法显示在背景定位区域中。
+            contain：把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。（背景图片放大的时候，只要宽度或者高度，一边铺满了容器，就停止放大。）
+            background-origin  和background-clip 的区别？
+            background-origin 指的是背景图片从什么地方开始，而background-clip是把相应部位的内容显示出来。
+            背景图片练习案例
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Document</title>
+                <style>
+                    *{
+                        margin:0;
+                        padding:0;
+                    }
+                  body{
+                      
+                    background:url("bg.jpg") fixed;
+                    padding:0 100px;
+                    box-sizing: border-box;
+                   }
+                   .contain{
+                       background:rgba(0,0,0,0.5);
+                      
+                       padding:30px;
+                       color:#fff;
+                    
+                      
+                   }
+                   p{
+                       line-height:40px;
+                       text-indent: 2em;
+                   }
+                </style>
+            </head>
+            <body>
+                <div class="contain">
+                    <p>
+                            去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次
+                    </p>
+                    <p>
+                            去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次
+                    </p>
+                    <img src="child.jpg" alt="" width="200" height="200">
+                    <p>
+                            去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次
+                            去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次
+                    </p>
+                    <p>
+                            去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次
+                    </p>
+                    <p>
+                            去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次
+                    </p>
+                    <p>
+                            去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次
+                    </p>
+                </div>
+            </body>
+            </html>
+    </div>
+</body>
+</html>

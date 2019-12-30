@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset2.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <script>
+        function refreshRem() {
+            var desW = 640,
+                winW = document.documentElement.clientWidth || document.body.clientWidth;
+            ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+    </script>
+</head>
+
+<body>
+    <header class="head">
+        <section class="md">
+            <section>热点</section>
+            <section>关注</section>
+        </section>
+    </header>
+    <nav class="navIn">
+        <section>足球现场</section>
+        <section>足球生活</section>
+        <section>足球美女</section>
+    </nav>
+    <main>
+        <figure>
+                <ul>
+                        <li class="image"></li>
+                        <span>小丸子</span>
+                    </ul>
+                    <ul>
+                        <li class="image"></li>
+                        <span>小丸子</span>
+                    </ul>
+        </figure>
+        <figure>
+                <ul>
+                        <li class="image"></li>
+                        <span>小丸子</span>
+                    </ul>
+                    <ul>
+                        <li class="image"></li>
+                        <span>小丸子</span>
+                    </ul>
+        </figure>
+        <figure>
+                <ul>
+                        <li class="image"></li>
+                        <span>小丸子</span>
+                    </ul>
+                    <ul>
+                        <li class="image"></li>
+                        <span>小丸子</span>
+                    </ul>
+        </figure>
+        <figure>
+                <ul>
+                        <li class="image"></li>
+                        <span>小丸子</span>
+                    </ul>
+                    <ul>
+                        <li class="image"></li>
+                        <span>小丸子</span>
+                    </ul>
+        </figure>
+    </main>
+    <footer class="foot">
+        <ul>
+            <li></li>
+            <a href="">首页</a>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="">首页</a>
+        </ul>
+        <ul>
+            <li class="xj"></li>
+            
+        </ul>
+        <ul>
+            <li></li>
+            <a href="">首页</a>
+        </ul>
+        
+        <ul>
+            <li></li>
+            <a href="">首页</a>
+        </ul>
+    </footer>
+</body>
+
+</html>

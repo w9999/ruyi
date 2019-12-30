@@ -1,0 +1,75 @@
+html,body{
+  height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    height: 0.6rem;
+    background: green;
+    display: flex;
+    align-items:center;
+}
+.head .md{
+    width: 2rem;
+    height: 0.3rem;
+    background: rgba(59,54,48,0.4);
+    margin: 0 auto;
+    display:flex;
+    border-radius: 0.18rem 0.18rem;
+    align-items:center;
+    justify-content:space-around;
+    color: #fff;
+}
+.navIn{
+    height: 0.6rem;
+    background: cornsilk;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+main .image{
+    background: url(../images/pic.jpg)
+    center center no-repeat;
+    background-size: 100%;
+    width: 3rem;
+    height: 3rem;
+    
+}
+.navIn{
+    border-bottom: 2px solid green;
+}
+main{
+    flex: 1;
+    background: paleturquoise;
+    overflow: auto;
+}
+.foot{
+    height: 0.6rem;
+    background: orchid;
+    display: flex;
+    justify-content:space-around;
+}
+main figure{
+    display: flex;
+    justify-content:space-between;
+}
+main figure span{
+    margin-left: 1.3rem;
+}
+.foot li{
+    background: url(../images/subject3.png)
+    center center no-repeat;
+    width: 0.39rem;
+    height: 0.38rem;
+    background-size: 100%;
+}
+.foot .xj{
+    background: url(../images/zxj_03.png)
+    center center no-repeat;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-size: 100%;
+    
+}

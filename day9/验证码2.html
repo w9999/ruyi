@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+   
+    </style>
+</head>
+<body>
+    <div id="show"></div>
+    <script>
+    let flag = null;
+    function createCode(){
+        if (flag>10){
+            clearInterval(inter);
+            return;
+        }
+        flag++;
+        let value ='';
+        for (var i=0;i<4;i++){
+            let item =Math.round(Math.random()*(9-1)+1);
+            value+=item
+        }
+        show.innerHTML = value;
+    }
+    createCode()
+    inter = setInterval(createCode,1000)
+    </script>
+</body>
+</html>
