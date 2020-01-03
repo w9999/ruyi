@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Fn(name,age){
+        // 形成是有作用域
+        // 形参赋值
+        // 变量提升
+        // 默认生成一个对象（初始化的实例）
+        // 让当前的this指向这个对象
+        // 代码执行
+        // 默认把这个对象renturn 出去（当前实例）
+        // 作用域是否销毁
+
+        this.name=name;
+        this.age =age;
+    }
+   let f1= new Fn('haha',19)//构造函数类型
+   console.log(f1)
+   let f2 =new Fn('dudu',18)
+   console.log(f2)
+//    f1和f2都是Fn的当前实例
+    //此时的Fn就是构造函数（同时他也是fn自定义类），构造韩式的返回值就是当前Fn类的实例
+    // 实例是对象数据类型（实例化对象）
+    // 类是函数数据类型的
+    // 构造函数里的this指向当前实例
+
+    </script>
+</body>
+</html>

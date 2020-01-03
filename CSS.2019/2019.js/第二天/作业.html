@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  var i = 5;
+        // function fn(i) {
+        //     return function (n) {
+        //         console.log(n + (++i));
+        //     }
+        // }
+        // var f = fn(3);
+        // f(4);//8
+        // fn(3)(6);//10
+        // f(2);//7
+        // console.log(i);//5
+
+
+        // var i = 2;//3  2 4
+        // function fn() {
+        //     i += 2;
+        //     return function (n) {
+        //         console.log(n + (--i))
+        //     }
+        // }
+        // var f = fn();
+        // f();//nan
+        // f(3);//5
+        // fn()(2);//5
+
+
+        // var num =1;//
+        // var obj = {
+        //     num : 2,//
+        //     fn : (function () {
+        //         this.num *= 2;//
+        //         num +=3; //
+        //         var num =1;
+        //         return function () {
+        //                 num +=2;//
+        //                 this.num +=2
+        //                 console.log(++num);//
+        //         }
+        //     })()
+        // };
+        // var f= obj.fn;
+        // f();
+        // obj.fn();
+        // console.log(window.num,obj.num);//
+
+
+        var num = 10;// 
+        var obj = { num: 15 };//
+        obj.fn = (function (num) {
+            this.num += 10;//20
+            num *= 2;//30
+            return function (n) {//
+                this.num += n;//
+                console.log(n + (--num));//
+            }
+        })(obj.num);
+        var fn = obj.fn;
+        fn(10); 39
+        obj.fn(15);//
+        console.log(window.num, obj.num);//
+
+    </script>
+</body>
+
+</html>
